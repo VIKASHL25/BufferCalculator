@@ -1,0 +1,68 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:text="Register New Faculty"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/teacherId"
+        android:hint="Enter Faculty ID"
+        app:layout_constraintTop_toBottomOf="@id/registerTitle"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/teacherName"
+        android:hint="Enter Faculty Name"
+        app:layout_constraintTop_toBottomOf="@id/teacherId"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/registerTeacherBtn"
+        android:text="Register"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@id/teacherName"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="140dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Return to Home"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerTeacherBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
