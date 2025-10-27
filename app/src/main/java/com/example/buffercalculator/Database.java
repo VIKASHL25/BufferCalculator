@@ -71,4 +71,12 @@ public class Database extends SQLiteOpenHelper {
         v.put("buffer_time", 120);
         db.update("teachers", v, null, null);
     }
+    // Update teacher buffer manually
+    public void updateTeacherBuffer(String id, int newBuffer) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("buffer_time", newBuffer);
+        db.update("teachers", values, "id=?", new String[]{id});
+    }
+
 }
