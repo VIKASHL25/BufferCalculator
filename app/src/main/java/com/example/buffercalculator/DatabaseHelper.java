@@ -1,7 +1,5 @@
 package com.example.buffercalculator;
 
-
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
